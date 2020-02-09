@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Soccer.Web.Data
+namespace Soccer.Web.Data.Entities
 {
     public class TeamEntity
     {
