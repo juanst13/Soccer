@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Soccer.Web.Data;
+using Soccer.Web.Data.Entities;
 
 namespace Soccer.Web.Controllers
 {
