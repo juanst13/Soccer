@@ -133,6 +133,7 @@ namespace Soccer.Web.Controllers
             {
 
                 string path = TeamViewModel.LogoPath;
+                string NameUpdate = TeamViewModel.Name;
 
                 if (TeamViewModel.LogoFile != null)
                 {
@@ -140,7 +141,7 @@ namespace Soccer.Web.Controllers
 
                 }
 
-                TeamEntity teamEntity = _converterHelper.ToTeamEntity(TeamViewModel, path, true); 
+                TeamEntity teamEntity = _converterHelper.ToTeamEntity(TeamViewModel, path, false); 
                 
                 _context.Update(teamEntity);
                 try
