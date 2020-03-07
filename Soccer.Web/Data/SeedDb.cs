@@ -129,6 +129,14 @@ namespace Soccer.Web.Data
                 AddTeam("Uruguay");
                 AddTeam("USA");
                 AddTeam("Venezuela");
+                AddTeam("Ajax");
+                AddTeam("Barcelona");
+                AddTeam("Bayer Leverkusen");
+                AddTeam("Chelsea");
+                AddTeam("Borussia Dortmund");
+                AddTeam("Inter Milan");
+                AddTeam("PSG");
+                AddTeam("Real Madrid");
                 await _context.SaveChangesAsync();
             }
         }
@@ -654,8 +662,6 @@ namespace Soccer.Web.Data
                         }
                     }
                 });
-
-
                 await _context.SaveChangesAsync();
             }
         }
