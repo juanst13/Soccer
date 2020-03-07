@@ -4,10 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Soccer.Web.Data
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext<UserEntity>
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
@@ -19,6 +20,8 @@ namespace Soccer.Web.Data
         public DbSet<GroupEntity> Groups { get; set; }
 
         public DbSet<MatchEntity> Matches { get; set; }
+
+        public DbSet<PredictionEntity> Predictions { get; set; }
 
         public DbSet<TeamEntity> Teams { get; set; }
 
