@@ -204,5 +204,14 @@
   <ItemGroup>
     <BundleResource Include="Resources\ic_more_vert.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_grade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_tag_faces.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_vpn_key.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
